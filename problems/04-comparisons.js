@@ -11,7 +11,7 @@ npm test test/04-comparisons-spec.js
 //    true only when str1 is strictly equal to a string of 'hello' and false if
 //    it is not.
 let str1 = 'hello';
-let isHelloStr1;
+let isHelloStr1 = str1 === 'hello';
 
 
 
@@ -19,7 +19,7 @@ let isHelloStr1;
 //    that evaluates to true if str2 is strictly equal to a string of 'hello'
 //    and false if it is not.
 let str2 = 'world';
-// Your code here 
+let isHelloStr2 = str2 === 'hello';
 
 
 
@@ -27,7 +27,7 @@ let str2 = 'world';
 //    expression that evaluates to false if str3 is strictly equal to a string
 //    of 'hello' and true if it is not.
 let str3 = 'moon';
-// Your code here 
+let isNotHelloStr3 = str3 !== 'hello';
 
 
 
@@ -35,7 +35,7 @@ let str3 = 'moon';
 //    expression that evaluates to true if num1 is strictly equal to the number
 //    10 and false if it is not.
 let num1 = 10;
-// Your code here 
+let isStrictSameNum = num1 === 10 
 
 
 
@@ -43,7 +43,7 @@ let num1 = 10;
 //    expression that evaluates to false if num2 is strictly equal to the number
 //    7 and true if it is not.
 let num2 = 15;
-// Your code here 
+let isStrictDiffNum = num2 !== 7
 
 
 
@@ -51,7 +51,7 @@ let num2 = 15;
 //    expression that evaluates to true if num3 is loosely equal to a string of
 //    '20' and false if it is not.
 let num3 = 20;
-// Your code here 
+let isLooselySameNum = num3 == '20'
 
 
 
@@ -59,7 +59,7 @@ let num3 = 20;
 //    expression that evaluates to true if num4 is greater than 10 and false if
 //    it is not.
 let num4 = 12;
-// Your code here 
+let isGreater = num4 > 10 
 
 
 
@@ -68,8 +68,7 @@ let num4 = 12;
 //    the number 4, and false if it is not.
 let num5 = 3;
 let num6 = 2;
-// Your code here 
-
+let isLess = num5 < (num6 + 4)
 
 
 // 9. Create a variable called isGreaterOrEqual and set it to a comparison
@@ -77,7 +76,7 @@ let num6 = 2;
 //    sum of num8 and the number -2, and false if it is not.
 let num7 = 9;
 let num8 = 11;
-// Your code here 
+let isGreaterOrEqual = num7 >= (num8 + (-2))
 
 
 
@@ -85,7 +84,9 @@ let num8 = 11;
 //     expression that evaluates to true if num9 falls inside the inclusive
 //     range of 8 to 10 and false if it does not.
 let num9 = 10;
-// Your code here 
+let isInRange = num9 <= 8 || num9 <= 10
+// num9 = 11
+// console.log(isInRange)
 
 
 
@@ -93,7 +94,7 @@ let num9 = 10;
 //     expression that evaluates to true if num10 falls inside the exclusive
 //     range of 8 to 10 and false if it does not.
 let num10 = 9;
-// Your code here 
+let isInExclusiveRange = num10 > 8 && num10 < 10
 
 
 
@@ -101,7 +102,7 @@ let num10 = 9;
 //     expression that evaluates to false if num11 falls inside the inclusive
 //     range of 50 to 80 and true if it does not.
 let num11 = 91;
-// Your code here 
+let isOutOfRange = num11 > 50 && num11 > 80
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
